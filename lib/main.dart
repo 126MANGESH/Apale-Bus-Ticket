@@ -14,10 +14,7 @@ class PMMPLApp extends StatelessWidget {
     return MaterialApp(
       title: 'PMPML',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        useMaterial3: true,
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue, useMaterial3: true),
       home: const HomePage(),
     );
   }
@@ -40,20 +37,21 @@ class _HomePageState extends State<HomePage> {
         elevation: 0,
         leading: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Image.asset(
-            'assets/pmpl_logo.png.webp',
-            fit: BoxFit.contain,
-          ),
+          child: Image.asset('assets/pmpl_logo.png.webp', fit: BoxFit.contain),
         ),
         actions: [
           IconButton(
-            icon: const Icon(Icons.notifications_outlined,
-                color: Color(0xFF090909)),
+            icon: const Icon(
+              Icons.notifications_outlined,
+              color: Color(0xFF090909),
+            ),
             onPressed: () {},
           ),
           IconButton(
-            icon: const Icon(Icons.account_circle_outlined,
-                color: Color(0xFF0B0B0B)),
+            icon: const Icon(
+              Icons.account_circle_outlined,
+              color: Color(0xFF0B0B0B),
+            ),
             onPressed: () {},
           ),
         ],
@@ -77,10 +75,7 @@ class _HomePageState extends State<HomePage> {
                       color: Color(0xFF999999),
                       fontSize: 16,
                     ),
-                    prefixIcon: Icon(
-                      Icons.search,
-                      color: Color(0xFF4A9BA7),
-                    ),
+                    prefixIcon: Icon(Icons.search, color: Color(0xFF4A9BA7)),
                     border: InputBorder.none,
                     contentPadding: EdgeInsets.symmetric(vertical: 12),
                   ),
@@ -190,10 +185,7 @@ class _HomePageState extends State<HomePage> {
                   child: const Center(
                     child: Text(
                       'Google Maps Integration',
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontSize: 14,
-                      ),
+                      style: TextStyle(color: Colors.grey, fontSize: 14),
                     ),
                   ),
                 ),
@@ -206,10 +198,7 @@ class _HomePageState extends State<HomePage> {
             Center(
               child: Text(
                 'Powered by Chartr for PMPML',
-                style: TextStyle(
-                  fontSize: 12,
-                  color: Colors.grey[600],
-                ),
+                style: TextStyle(fontSize: 12, color: Colors.grey[600]),
               ),
             ),
 
@@ -294,7 +283,7 @@ class _HomePageState extends State<HomePage> {
               label,
               textAlign: TextAlign.center,
               style: const TextStyle(
-                fontSize: 11,
+                fontSize: 12,
                 color: Colors.black,
                 fontWeight: FontWeight.w500,
               ),
