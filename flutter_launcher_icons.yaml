@@ -1,0 +1,9 @@
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/pmpl_logo.png.webp"
+  
+  # Adaptive icon for Android 8+
+  adaptive_icon_background: "#2DAE9B"
+  adaptive_icon_foreground: "assets/pmpl_logo.png.webp"
